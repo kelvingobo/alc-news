@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="materialize/css/materialize.css">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="images/icons/icon-144x144.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  
+  <body>
+      <div id="simple-modal">
+          <div class="modal-content">
+            <span class="closeBtn">&times;</span>
+            <div id="fav-posts-saved">
+            </div>
+          </div>
+        </div>
+    <div class="navbar-fixed">
+      <nav class="nav-extended" style="background-color: #ac193d">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">News</a>
+        </div>
+        <div class="nav-content">
+          
+          <ul class="tabs tabs-transparent">
+            <li class="tab" id="countries-list"><a>Search by Country</a></li>
+            <li class="tab" id="source-search"><a>Search by source</a></li>
+          </ul>
+        </div>
+        <div id="tab_section">
+            <select id="country_nav" style="background-color: #ac193d; color: #fff; border-width: 0; outline: 0" >
+                <option>Select Country</option>
+                <option value="ar">Argentina</option>
+                <option value="at">Austria</option>
+                <option value="au">Australia</option>
+                <option value="be">Belgium</option>
+                <option value="bg">Bulgaria</option>
+                <option value="br">Brazil</option>
+                <option value="ca">Canada</option>
+                <option value="cn">China</option>
+                <option value="co">Colombia</option>
+                <option value="cu">Cuba</option>
+                <option value="cz">Czech Republic</option>
+                <option value="de">Germany</option>
+                <option value="eg">Egypt</option>
+                <option value="fr">France</option>
+                <option value="gr">Greece</option>
+                <option value="hk">Hong Kong</option>
+                <option value="hu">Hungary</option>
+                <option value="id">Indonesia</option>
+                <option value="ie">Ireland</option>
+                <option value="il">Israel</option>
+                <option value="in">India</option>
+                <option value="it">Italy</option>
+                <option value="jp">Japan</option>
+                <option value="kr">Korea</option>
+                <option value="lt">Lithuania</option>
+                <option value="lv">Latvia</option>
+                <option value="ma">Morocco</option>
+                <option value="mx">Mexico</option>
+                <option value="my">Malaysia</option>
+                <option value="ng">Nigeria</option>
+                <option value="nl">Netherlands</option>
+                <option value="no">Norway</option>
+                <option value="nz">New Zealand	</option>
+                <option value="ph">Philippines</option>
+                <option value="pl">Poland</option>
+                <option value="pt">Portugal</option>
+                <option value="ro">Romania</option>
+                <option value="rs">Serbia</option>
+                <option value="ru">Russia</option>
+                <option value="sa">Saudi Arabia</option>
+                <option value="sg">Singapore</option>
+                <option value="sk">Slovakia</option>
+                <option value="si">Slovenia</option>
+                <option value="za">South Africa</option>
+                <option value="se">Sweden</option>
+                <option value="ch">Switzerland</option>
+                <option value="tw">Taiwan</option>
+                <option value="th">Thailand</option>
+                <option value="tr">Turkey</option>
+                <option value="ua">Ukraine</option>
+                <option value="ae">United Arab Emirates</option>
+                <option value="gb">United Kingdom</option>
+                <option value="us">United States</option>
+                <option value="ve">Venezuela</option>
+            </select>
+            <select id="search_nav" style="background-color: #ac193d; color: #fff; border-width: 0; outline: 0" >
+            </select>
+          </div>
+      </nav>        
+    </div>   
+    
+    
+    <div class="container" id="wrap">
+      <div id="wrapper">
+        <div class="spinner-hold">
+          <div class="spinner-4 spinner"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large" style="background-color: #ac193d">
+        <i class="large material-icons" id="fav">favorite</i>
+      </a>
+    </div>
+    <script type="text/javascript" src="idb.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
